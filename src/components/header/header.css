@@ -1,0 +1,399 @@
+.Header {
+  background-image: url(/public/assets/img/johnwick.png);
+  /* width: 100%; */
+  color: white;
+  padding: 0.6rem 4rem;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+}
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14%;
+  cursor: pointer;
+}
+
+.Logo h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.Search {
+  background-color: transparent;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.Search input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+.Search {
+  font-size: 1.2rem;
+  color: white;
+}
+.Search:hover {
+  color: red;
+}
+.Search input::placeholder {
+  color: white;
+}
+.Menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  cursor: pointer;
+}
+.Menu h4 {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.IMDB,
+.RottenTomatoes {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+}
+.IMDB img:hover,
+.RottenTomatoes img:hover {
+  cursor: pointer;
+}
+.IMDB {
+  width: 55%;
+}
+.RottenTomatoes {
+  width: 25%;
+}
+.JohnWick-text p {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  cursor: default;
+}
+.Button {
+  padding-bottom: 8.5rem;
+  cursor: pointer;
+}
+.navBodyIcon h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  cursor: default;
+}
+.navBodyIcon p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.Rating {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+.Pagination {
+  width: 10%;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.Pagination p {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9px 0;
+  color: grey;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  cursor: pointer;
+}
+.three hr {
+  width: 40%;
+}
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 24px;
+  width: 50%;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .Header {
+    background-position: center;
+    padding: 0.6rem 2rem;
+  }
+
+  .Logo h3 {
+    font-size: 20px;
+  }
+  .Search {
+    padding: 0.5rem;
+    width: 45%;
+    font-size: 1rem;
+  }
+  .Search input {
+    font-size: 0.9rem;
+  }
+
+  .Menu {
+    width: 15%;
+    cursor: pointer;
+  }
+  .Menu h4 {
+    font-size: 14px;
+  }
+  .JohnWick-text p {
+    font-size: 13px;
+  }
+  .Button img {
+    width: 50%;
+  }
+  .navBodyIcon h1 {
+    font-size: 38px;
+    font-weight: 900;
+  }
+  .Rating {
+    width: 60%;
+  }
+  .three hr {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Header {
+    padding: 0.6rem 1rem;
+  }
+
+  .Logo h3 {
+    font-size: 15px;
+  }
+  .Logo img {
+    width: 50%;
+  }
+  .Search {
+    width: 45%;
+    font-size: 0.9rem;
+  }
+  .Search input {
+    font-size: 0.8rem;
+  }
+
+  .Menu {
+    width: 13%;
+  }
+  .Menu h4 {
+    font-size: 13px;
+  }
+  .JohnWick-text p {
+    font-size: 13px;
+  }
+  .Button img {
+    width: 50%;
+  }
+  .navBodyIcon h1 {
+    font-size: 34px;
+    font-weight: 1000;
+  }
+  .Rating {
+    width: 60%;
+  }
+  .three hr {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Header {
+    padding: 0.6rem 1rem;
+  }
+
+  .Logo h3 {
+    font-size: 14px;
+  }
+  .Logo img {
+    width: 50%;
+  }
+  .Search {
+    width: 45%;
+    font-size: 0.8rem;
+  }
+  .Search input {
+    font-size: 0.7rem;
+  }
+
+  .Menu {
+    width: 13%;
+    font-size: 12px;
+  }
+  .Menu h4 {
+    font-size: 13px;
+  }
+  .JohnWick-text p {
+    font-size: 12px;
+  }
+  .Button img {
+    width: 45%;
+  }
+  .navBodyIcon h1 {
+    font-size: 32px;
+    font-weight: 1000;
+    line-height: 38px;
+  }
+  .Rating {
+    width: 60%;
+  }
+  .three hr {
+    width: 30%;
+  }
+  .IMDB,
+  .RottenTomatoes {
+    padding: 0.9rem 0;
+  }
+  .IMDB img,
+  .RottenTomatoes img {
+    width: 30%;
+  }
+
+  .Pagination p {
+    padding: 0.5px 0;
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Logo h3 {
+    font-size: 12px;
+  }
+
+  .Search {
+    width: 45%;
+    font-size: 0.7rem;
+  }
+  .Search input {
+    font-size: 0.6rem;
+  }
+
+  .Menu {
+    width: 14%;
+    font-size: 10px;
+  }
+  .Menu h4 {
+    font-size: 11px;
+  }
+  .JohnWick-text p {
+    font-size: 11px;
+    line-height: 1rem;
+  }
+  .Button img {
+    width: 40%;
+  }
+  .navBodyIcon h1 {
+    font-size: 30px;
+  }
+
+  .three hr {
+    width: 30%;
+  }
+  .three {
+    font-size: 18px;
+  }
+
+  .IMDB img,
+  .RottenTomatoes img {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .Logo h3 {
+    font-size: 10px;
+  }
+
+  .Search {
+    width: 45%;
+    font-size: 0.7rem;
+  }
+  .Search input {
+    font-size: 0.5rem;
+  }
+
+  .Menu {
+    width: 15%;
+    font-size: 7px;
+  }
+  .Menu h4 {
+    font-size: 9px;
+  }
+  .navBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .Button img {
+    width: 50%;
+  }
+  .Button {
+    padding-bottom: 4rem;
+  }
+  .navBodyIcon h1 {
+    font-size: 34px;
+  }
+  .Pagination {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Pagination p {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 2rem;
+    color: grey;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14px;
+    cursor: pointer;
+  }
+  .three hr {
+    width: 50%;
+  }
+  .three {
+    font-size: 20px;
+    flex-direction: column;
+    width: 10%;
+  }
+
+  .IMDB img,
+  .RottenTomatoes img {
+    width: 25%;
+  }
+}

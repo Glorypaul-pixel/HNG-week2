@@ -1,0 +1,161 @@
+.MovieSeries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  justify-content: center;
+  place-items: center;
+  padding: 0 4rem;
+}
+
+.Poster img {
+  width: 250px;
+  max-height: 370px;
+  min-height: 370px;
+}
+.usa p {
+  padding-top: 1rem;
+}
+.Poster-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 122%;
+  color: white;
+  padding: 0 1rem;
+  width: 19%;
+}
+.Poster-text img:hover,
+.Poster-tex img:hover,
+.Poster-te img:hover,
+.Poster-t img:hover,
+.Poster- img:hover,
+.Poste-- img:hover,
+.Poste img:hover,
+.Post img:hover,
+.Pos img:hover,
+.Postext img:hover,
+.Postext- img:hover,
+.Postexter img:hover {
+  cursor: pointer;
+}
+
+.Poster-tex,
+.Poster-te,
+.Poster-t {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 122%;
+  width: 18%;
+}
+.Poster-,
+.Poste--,
+.Poste,
+.Post {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 211%;
+  width: 18%;
+}
+.Pos,
+.Postext,
+.Postext-,
+.Postexter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 300%;
+  width: 18%;
+}
+.Poster-text img:hover {
+  color: #be123c;
+  cursor: pointer;
+}
+
+.movie-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  padding-top: 0.5rem;
+  cursor: default;
+  color: #111827;
+}
+.movie-text p {
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.62px;
+  cursor: default;
+}
+.rate-movie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  cursor: default;
+}
+.imdb-movie {
+  width: 40%;
+}
+.tomatoes {
+  width: 20%;
+}
+.imdb-movie,
+.tomatoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imdb-movie img:hover,
+.tomatoes img:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .MovieSeries {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .Poster img {
+    width: 230px;
+    max-height: 340px;
+    min-height: 340px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .MovieSeries {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .Poster img {
+    width: 230px;
+    max-height: 330px;
+    min-height: 330px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .MovieSeries {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .Poster img {
+    width: 180px;
+    max-height: 300px;
+    min-height: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .MovieSeries {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .Poster img {
+    width: 270px;
+    max-height: 350px;
+    min-height: 350px;
+  }
+}

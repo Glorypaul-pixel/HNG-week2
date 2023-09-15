@@ -1,0 +1,120 @@
+.footer {
+  text-align: center;
+  justify-content: center;
+  padding: 7rem 25rem 8rem 25rem;
+  line-height: 3rem;
+}
+.socials,
+.policy {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socials {
+  padding: 0 10rem;
+}
+.socials img:hover {
+  cursor: pointer;
+}
+.policy p {
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 23.44px; */
+  color: #111827;
+  gap: 48px;
+  cursor: pointer;
+}
+p {
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 23.44px; */
+  color: #6b7280;
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .footer {
+    text-align: center;
+    justify-content: center;
+    padding: 8rem 9rem 6rem 9rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 8rem 3rem 6rem 3rem;
+    line-height: 3rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  .policy p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .socials {
+    padding: 0 6rem;
+  }
+  .socials img {
+    width: 85%;
+  }
+  .policy p {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .footer {
+    padding: 6rem 2rem 8rem 2rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .socials {
+    padding: 0 6rem;
+  }
+  .socials img {
+    width: 75%;
+  }
+  .policy p {
+    font-size: 13px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .footer {
+    padding: 6rem 2rem 8rem 2rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .socials {
+    padding: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .socials img {
+    width: 70%;
+  }
+  .policy p {
+    font-size: 13px;
+  }
+  p {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer {
+    padding: 6rem 1rem;
+    line-height: 2rem;
+  }
+
+  .policy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
