@@ -3,6 +3,7 @@ import "./home.css"
 import FeatureTitle from "../feature/FeatureTitle"
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
+import Display from "../display/Display"
 export default function Home() {
   return (
     <div className="Homepage">
@@ -10,6 +11,7 @@ export default function Home() {
         <FeatureTitle/>   
         <MovieSeries/>    
         <Footer/>
+        <Display/>
     </div>
   )
 }

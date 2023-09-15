@@ -1,0 +1,15 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.MotherBox {
+  display: flex;
+  padding-bottom: 10rem;
+}
+.trailer {
+  background-image: url(/public/assets/img/triller.png);
+  width: 1100px;
+  height: 440px;
+  border-radius: 20px;
+} */
