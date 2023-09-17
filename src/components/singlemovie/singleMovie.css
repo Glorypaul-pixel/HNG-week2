@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.MotherBox {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.asideBar {
+  border: 2px solid black;
+  border-left: none;
+  border-radius: 0 2rem 2rem 0;
+  width: 226px;
+  height: 960px;
+  margin-bottom: 4rem;
+}
+.mainBar {
+  height: 982px;
+  padding: 1.5rem;
+}
+.blogo,
+.home,
+.movies,
+.tv-series,
+.upcoming,
+.logOut {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  text-align: center;
+}
+.blogo h3,
+.home h4,
+.movies h4,
+.tv-series h4,
+.upcoming h4,
+.logOut h4 {
+  padding-left: 4px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.home,
+.movies,
+.tv-series,
+.upcoming,
+.logOut {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+.home h4:hover,
+.tv-series h4:hover,
+.upcoming h4:hover,
+.logOut h4:hover {
+  color: #be123c;
+}
+.movies h4 {
+  color: #be123c;
+}
+.movies {
+  background-color: #fac7d4;
+  border-right: 4px solid #be123c;
+  margin: 4px 0;
+}
+.home:hover,
+.tv-series:hover,
+.upcoming:hover,
+.logOut:hover {
+  color: black;
+  background-color: #fac7d4;
+  border-right: 4px solid #be123c;
+}
+.sideText {
+  border: 1px solid #be123c;
+  padding: 2rem 1rem;
+  height: 210px;
+  background-color: #f8e7eb66;
+  border-radius: 20px;
+  margin: 1rem;
+  line-height: 2rem;
+  cursor: default;
+}
+.sideText h5 {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sideText h6 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sideText button {
+  padding: 10px 2rem;
+  color: #be123c;
+  border-radius: 30px;
+  background-color: #fac7d4;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+}
+.sideText button:hover {
+  color: #fac7d4;
+  background-color: #be123c;
+  cursor: pointer;
+}
+.trailer {
+  background-image: url(/public/assets/img/triller.png);
+  width: 1060px;
+  height: 440px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.star,
+.action,
+.top,
+.top ul,
+.rate,
+.top-shows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action {
+  width: 60%;
+}
+.top {
+  width: 75%;
+}
+.top ul {
+  width: 40%;
+}
+.action h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.action h6 {
+  color: #be123c;
+}
+.top-text p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #333;
+}
+.top-text {
+  padding-right: 1rem;
+}
+.top-text span {
+  color: #be123c;
+}
+.rate span {
+  color: grey;
+}
+.awards {
+  width: 700px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  cursor: default;
+}
+.nomines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  line-height: 30px;
+  letter-spacing: 0em;
+  cursor: default;
+}
+.nomines p {
+  color: #333;
+}
+.nomines button {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  line-height: 30px;
+  letter-spacing: 0em;
+  width: 250px;
+  background-color: #be123c;
+  color: white;
+  padding: 1rem;
+  border: none;
+
+  border-radius: 1rem;
+}
+.nomines button:hover {
+  background-color: #fac7d4;
+  color: #be123c;
+  cursor: pointer;
+}
+.button2 button,
+.button3 button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.button2 button:hover,
+.button3 button:hover {
+  background-color: #fac7d4;
+  color: #be123c;
+}
+.button2 button {
+  background-color: #be123c;
+  color: white;
+  border: none;
+  margin: 1rem 0;
+  width: 360px;
+  font-size: 18px;
+  padding: 1rem 6rem;
+
+  border-radius: 1rem;
+}
+.button3 button {
+  border-radius: 1rem;
+  border: 1px solid #be123c;
+  font-size: 18px;
+  margin-bottom: 2rem;
+  width: 360px;
+  padding: 1rem 5rem;
+}
+.bottom-img {
+  background-image: url(/public/assets/img/photos.png);
+  width: 360px;
+  height: 229px;
+  top: 733px;
+  left: 1081px;
+}

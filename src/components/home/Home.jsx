@@ -9,7 +9,8 @@ export default function Home() {
         <Header/>
         <FeatureTitle/>   
         <MovieSeries/>    
-        <Footer/>
+        <Footer />
+    
     </div>
   )
 }

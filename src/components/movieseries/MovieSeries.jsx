@@ -32,7 +32,7 @@ export default function MovieSeries() {
   return (
     <div className="MovieSeries">
       {
-        movies?.slice(0, 12)?.map((movie, idx) => (
+        movies?.slice(0, 10)?.map((movie, idx) => (
           <Link to={`/movie/${movie.id}`}>
           <div className="movieCard" key={idx}>
             <div className="Poster">

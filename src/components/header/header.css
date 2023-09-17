@@ -3,6 +3,7 @@
   /* width: 100%; */
   color: white;
   padding: 0.6rem 4rem;
+  background-repeat: no-repeat;
 }
 .navBar {
   display: flex;
