@@ -18,11 +18,7 @@ export default function SingleMovie() {
     
     useEffect(() => {
         const getSingleMovie = async() => {
-            const res = await axios.get(`${BASE_URL}search/find/${params.id}?external_source="https://api.themoviedb.org/3/movie/${params.id}"&api_key=${API_KEY}`)
-            if(res.status === 200) {
-             console.log(res.data)
-             setLoading(false)
-            }
+            axios.get(`${BASE_URL}movie/${params.id}?api_key=${API_KEY}`)
         }
 
         getSingleMovie()
