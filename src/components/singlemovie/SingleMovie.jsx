@@ -143,7 +143,7 @@ export default function SingleMovie() {
               ))
              } */}
               <div className="trailer">
-                   <img src={`https://image.tmdb.org/t/p/original${movies?.poster_path}`} alt="" width="1098px" height="400px"  style={{borderRadius: "20px" , marginBottom: "6rem"}} />
+                   <img src={`https://image.tmdb.org/t/p/original${movies?.poster_path}`} alt="" width="1098px" height="500px"  style={{borderRadius: "20px" , marginBottom: "6rem"}} />
               </div>
               <div className="star">
                   <div className="action">
@@ -152,14 +152,14 @@ export default function SingleMovie() {
                       {(movies?.original_title)}
                      </h4>
                      <ul>
-                       <li> {movies?.released_date}</li>
+                       <li> {movies?.release_date}</li>
                        <li> PG-13</li> 
                        <li> 2h 10m</li> 
                       </ul>
                   </div>
                 
-                  {/* <h6>{movies?.genres.name[0]}</h6>
-                  <h6>{movies?.genres.name[1]}</h6> */}
+                  <h6>Action</h6>
+                  <h6>Drama</h6>
       
                   </div>
                   <div className="rate">
