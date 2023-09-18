@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useState, useEffect } from "react"
 import { BASE_URL, API_KEY } from "../../constant"
 import axios from "axios"
@@ -13,17 +13,28 @@ import {LiaTvSolid} from "react-icons/lia"
 
 export default function SingleMovie() {
     const [loading, setLoading] = useState(true)
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([])  
     const params = useParams()
+    // const truncate = (str, n) => {
+    //   return str.length > n ? str.substr(0, n-1) + "..." : str
+    // }
     
     useEffect(() => {
         const getSingleMovie = async() => {
-            axios.get(`${BASE_URL}movie/${params.id}?api_key=${API_KEY}`)
+            axios.get(`${BASE_URL}movie/${params.id}?api_key=${API_KEY}`).then((res)=> {
+                if (res.status === 200){
+                    setMovies(res.data)
+                    console.log(res.data);
+                }
+                else{
+                    setMovies([])
+                }
+            })
         }
 
         getSingleMovie()
     }, [params])
-    return (
+        return (
       <div className='MotherBox'>
           <div className="asideBar">
               <div className="blogo">
@@ -59,39 +70,109 @@ export default function SingleMovie() {
               </div>
           </div>
           <div className="mainBar">
-              <div className="trailer">
-                  <img src="assets/img/trailer.png" alt="trailer video" />
+             {/* {
+              movies?.map((movie, idx) =>(
+                <Link to={`/movie/${movie.id}`}>
+                   <div className="trailer" key={idx}>
+                   <img src={`https://image.tmdb.org/t/p/original${movie?.poster_path}`} alt="" />
               </div>
               <div className="star">
                   <div className="action">
                   <div className="top">
                       <h4>
-                       Top Gun: Maverick    
+                      {truncate(movie?.original_title, 20)}
                      </h4>
-                     <ul>
-                       <li> 2022</li>
+                     <ul >{movie?.release_date}
+                       <li> </li>
                        <li> PG-13</li> 
-                       <li> 2h 10m</li> 
+                       <li> {movie?.time}</li> 
                       </ul>
                   </div>
                 
-                  <h6>Action</h6>
-                  <h6>Drama</h6>
+                  <h6> {movie?.genres.name[0]} </h6>
+                  <h6>{movie?.genres.name[1]}</h6>
       
                   </div>
                   <div className="rate">
                       <img src="assets/icons/Star.png" alt="Star" />
                       <h4>
-                       <span> 8.5</span> | 350k
+                       <span> {movie?.vote_average} </span> | 350k
                       </h4>
                   </div>
               </div>
               <div className="top-shows" >
                   <div className="top-text">
                   <p>
-                  After thirty years, Maverick is still pushing the envelope as a top naval aviator,
-                  but must confront ghosts of his past when he leads TOP GUN's elite graduates
-                  on a mission that demands the ultimate sacrifice from those chosen to fly it.
+                  {movie?.overview}
+                  </p>
+                  <br />
+                 <p>Director: <span>Joseph Kosinski</span>
+                  </p> <br />
+                  <p>Writers: <span>Jim Cash, Jack Epps Jr, Peter Craig</span>
+                  </p> <br />
+                  <p>Stars: <span>Tom Cruise, Jennifer Connelly, Miles Teller</span>
+                  </p> <br /> <br />
+      
+                  <div className="awards">
+                      <div className="nomines">
+                      <button type="submit">Top rated movie #65</button> 
+                      <p>Awards 9 nominations</p> 
+                      </div>
+                      <AiOutlineDown/>
+                  </div>
+                  </div>
+                  <div className="showtime">
+                    <div className="button2" >
+                    <button type="submit">
+                          <IoTicketOutline/>
+                          See Showtimes
+                      </button>
+                    </div>
+                  <div className="button3">
+                  <button type="submit">
+                       <TfiMenuAlt/>
+                       More watch options
+                      </button> </div>
+                     
+                      <div className="bottom-img">
+                          
+                      </div>
+                  </div>
+              </div> 
+                </Link>
+              ))
+             } */}
+              <div className="trailer">
+                   <img src={`https://image.tmdb.org/t/p/original${movies?.poster_path}`} alt="" width="1098px" height="450px"  style={{borderRadius: "20px" , marginBottom: "6rem"}} />
+              </div>
+              <div className="star">
+                  <div className="action">
+                  <div className="top">
+                      <h4>
+                      {(movies?.original_title)}
+                     </h4>
+                     <ul>
+                       <li> {movies?.released_date}</li>
+                       <li> PG-13</li> 
+                       <li> 2h 10m</li> 
+                      </ul>
+                  </div>
+                
+                  {/* <h6>{movies?.genres.name[0]}</h6>
+                  <h6>{movies?.genres.name[1]}</h6> */}
+      
+                  </div>
+                  <div className="rate">
+                      <img src="assets/icons/Star.png" alt="Star" />
+                      <h4>
+                       <span>{movies?.vote_average} </span> | 350k
+                      </h4>
+                  </div>
+              </div>
+              <div className="top-shows" >
+                  <div className="top-text">
+                  <p>
+                 {movies?.overview}
                   </p>
                   <br />
                  <p>Director: <span>Joseph Kosinski</span>
@@ -135,3 +216,5 @@ export default function SingleMovie() {
 
   // )
 }
+
+

@@ -124,8 +124,8 @@
 }
 .trailer {
   background-image: url(/public/assets/img/triller.png);
-  width: 1060px;
-  height: 440px;
+  width: 600px;
+  height: 340px;
   border-radius: 20px;
   margin-bottom: 2rem;
 }
@@ -142,6 +142,10 @@
 
 .action {
   width: 60%;
+  margin-top: 6rem;
+}
+.rate {
+  margin-top: 6rem;
 }
 .top {
   width: 75%;
