@@ -14,7 +14,7 @@ export default function Header() {
   }
 
   const onSearchFunc = async() => {
-    const res = await axios.get(`${BASE_URL}/search/movie?api_key=${API_KEY}&query=${searchparams}`)
+    const res = await axios.get(`${BASE_URL}/search/movies?api_key=${API_KEY}&query=${searchparams}`)
     if(res.status === 200) {
       navigate("/result", {
         state: res.data.results

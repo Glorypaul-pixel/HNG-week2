@@ -45,25 +45,25 @@ export default function FeatureTitle() {
 </div>
 <div className="featureMovies">
 {  
-        movies?.slice(0, 4)?.map((movie, idx) => (
-          <Link to={`/movie/${movie.id}`}>
+        movies?.slice(0, 4)?.map((movies, idx) => (
+          <Link to={`/movies/${movies.id}`}>
           <div className="movieCard" key={idx}>
             <div className="Poster">
-              <img src={`https://image.tmdb.org/t/p/original${movie?.poster_path}`} alt="" />
+              <img src={`https://image.tmdb.org/t/p/original${movies?.poster_path}`} alt="" />
               <div className="Poster-text">
           <GrFavorite />    
            </div>
             </div>
             <div className="movie-text">
         <div className="usa">
-        <p>USA, {movie?.release_date}</p>
+        <p>USA, {movies?.release_date}</p>
 
         </div>
-        <h3>{truncate(movie?.original_title, 20)}</h3>
+        <h3>{truncate(movies?.original_title, 20)}</h3>
         <div className="rate-movie">
           <div className="imdb-movie">
             <img src="assets/img/imob.png" alt="imdb" />
-            <p>{(movie?.vote_average * 10).toFixed(2)}/100</p>
+            <p>{(movies?.vote_average * 10).toFixed(2)}/100</p>
           </div>
           <div className="tomatoes">
             <img src="assets/icons/tomatoes.png" alt="" />
