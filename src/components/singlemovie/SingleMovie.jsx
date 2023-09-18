@@ -143,7 +143,7 @@ export default function SingleMovie() {
               ))
              } */}
               <div className="trailer">
-                   <img src={`https://image.tmdb.org/t/p/original${movies?.poster_path}`} alt="" width="1098px" height="450px"  style={{borderRadius: "20px" , marginBottom: "6rem"}} />
+                   <img src={`https://image.tmdb.org/t/p/original${movies?.poster_path}`} alt="" width="1098px" height="400px"  style={{borderRadius: "20px" , marginBottom: "6rem"}} />
               </div>
               <div className="star">
                   <div className="action">
